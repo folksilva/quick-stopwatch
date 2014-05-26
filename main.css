@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'LCD2U';
+	src: url('./LCD2U.eot');
+	src: local('LCD2U'), url('./LCD2U.woff') format('woff'), url('./LCD2U.ttf') format('truetype');
+}
+
+
+body {
+    
+    font-family: 'LCD2U';
+    text-align: right;
+    margin: 0;
+}
+.bg {
+    padding: 10px;
+    -webkit-transition: background linear 200ms;
+    -webkit-app-region: drag;
+}
+
+#pomodoro {
+    font-size: 2rem;
+    color: rgb(254, 191, 1);
+    text-shadow: 0 0 3px rgba(254, 191, 1, 0.8);
+    cursor: pointer;
+    display: inline;
+    -webkit-app-region: no-drag;
+}
+#pomodoro.freetime {
+    color: rgb(2, 216, 2);
+    text-shadow: 0 0 3px rgba(2, 216, 2, 0.8);
+}
+#pomodoro.dangertime {
+    color: rgb(242, 50, 2);
+    text-shadow: 0 0 3px rgba(242, 50, 2, 0.8);
+}
+#worktime {
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    text-shadow: 0 0 2px rgba(250, 250, 250, 0.8);
+    cursor: pointer;
+    display: inline;
+    -webkit-app-region: no-drag;
+}

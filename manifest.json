@@ -1,0 +1,16 @@
+{
+    "name": "Quick Stopwatch",
+    "description": "Simples aplicativo que conta o tempo",
+    "version": "1",
+    "manifest_version": 2,
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "icons": {
+        "16": "icon_16.png",
+        "128": "icon_128.png"
+    },
+    "permissions": ["alwaysOnTopWindows", "experimental", "system.display"]
+}
