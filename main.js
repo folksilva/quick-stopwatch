@@ -2,6 +2,8 @@
 var _bg = document.getElementById('bg'),
     _pomodoro = document.getElementById('pomodoro'),
     _worktime = document.getElementById('worktime'),
+    _ding = document.getElementById('ding'),
+    _tick = document.getElementById('tick'),
     interval, freetime = 0, sessions = 0, pomodoro = 0, 
     worktime = 0, working = false, pendulo = false;
 
@@ -17,7 +19,6 @@ chrome.system.display.getInfo(function (displays) {
         primaryDisplay.workArea.width - 150,
         primaryDisplay.workArea.height
     );
-    console.log(primaryDisplay.workArea);
 });
 
 _pomodoro.addEventListener('click', function (e) {
@@ -25,6 +26,7 @@ _pomodoro.addEventListener('click', function (e) {
         pomodoro = (25 * 60) + 1;
         sessions += 1;
         working = true;
+        _tick.play();
     } else {
         freetime = 0;
         working = false;
@@ -75,6 +77,7 @@ function clock() {
         if (pomodoro < 0) {
             freetime = 0;
             working = false;
+            _ding.play();
         }
     } else {
         freetime += 1;
