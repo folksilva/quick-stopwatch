@@ -35,9 +35,7 @@ _pomodoro.addEventListener('click', function (e) {
 
 _worktime.addEventListener('click', function (e) {
     worktime = 0;
-    pomodoro = (25 * 60) + 1;
     sessions = 1;
-    working = true;
 });
 
 
@@ -84,6 +82,7 @@ function clock() {
     }
     pendulo = !pendulo;
     output();
+    chrome.app.window.setAlwaysOnTop(true);
 }
 
 interval = window.setInterval(clock, 1000);
