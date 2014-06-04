@@ -1,4 +1,4 @@
-quick-stopwatch
+Pomodoro
 ===============
 
-Chrome App com relógio para a técnica Pomodoro
+App simples para uso da técnica de pomodoro

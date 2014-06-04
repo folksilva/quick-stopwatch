@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'LCD2U';
+	src: url('./LCD2U.eot');
+	src: local('LCD2U'), url('./LCD2U.woff') format('woff'), url('./LCD2U.ttf') format('truetype');
+}
+
+/* Prevent copy paste for all elements except text fields */
+*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+input, textarea  { -webkit-user-select:text; }
+
+body {
+    background-color: #222222;
+    color:black;
+    text-align: center;
+    margin: 0;
+    padding: 4rem 0 0 0;
+}
+.bg {
+    padding: 10px;
+    -webkit-transition: background linear 200ms;
+}
+
+#pomodoro {
+    font-family: 'LCD2U';
+    font-size: 6rem;
+    color: rgb(254, 191, 1);
+    text-shadow: 0 0 3px rgba(254, 191, 1, 0.8);
+    cursor: pointer;
+    display: inline;
+}
+#pomodoro.freetime {
+    color: rgb(2, 216, 2);
+    text-shadow: 0 0 3px rgba(2, 216, 2, 0.8);
+}
+#pomodoro.dangertime {
+    color: rgb(242, 50, 2);
+    text-shadow: 0 0 3px rgba(242, 50, 2, 0.8);
+}
+#worktime {
+    font-family: 'LCD2U';
+    font-size: 3rem;
+    color: rgb(200, 200, 200);
+    text-shadow: 0 0 2px rgba(250, 250, 250, 0.8);
+    cursor: pointer;
+    display: inline;
+}
+.btnSeparator {
+    display: block;
+}
+#btnToggle {
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 8rem;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    border-radius: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.btnToggleOff {
+	-webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background-color:#007dc1;
+	border:1px solid #124d77;
+	cursor:pointer;
+	color:#ffffff;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.btnToggleOff:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background-color:#0061a7;
+}
+.btnToggleOff:active {
+	position:relative;
+	top:1px;
+}
+
+.btnToggleOn {
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background-color:#d0451b;
+	border:1px solid #942911;
+    cursor:pointer;
+	color:#ffffff;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.btnToggleOn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background-color:#bc3315;
+}
+.btnToggleOn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.btnReset {
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background-color:#f9f9f9;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-size: 1.3rem;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.btnReset:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background-color:#e9e9e9;
+}
+.btnReset:active {
+	position:relative;
+	top:1px;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        padding: 2rem 0 0 0;
+    }
+    .btnSeparator {
+        display: none;
+    }
+    #btnToggle {
+        display: inline-block;
+        font-size: 1.3rem;
+        line-height: 4rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+    }
+}
+

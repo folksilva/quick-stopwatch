@@ -1,0 +1,31 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>Pomodoro</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<style type="text/css">
+		/* Prevent copy paste for all elements except text fields */
+		*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+		input, textarea  { -webkit-user-select:text; }
+		body { background-color:white; color:black }
+	</style>
+    <link rel="stylesheet" type="text/css" href="main.css">
+	<script src='intelxdk.js'></script>
+</head>
+<body>
+    <div id="pomodoro">00:00</div>
+    <div></div>
+    <div id="worktime">00:00</div>
+    <div></div>
+    <button class="btnToggleOff" id="btnToggle">
+        Start!
+    </button>
+    <div class="btnSeparator"></div>
+    <button class="btnReset" id="btnReset">
+        Reset
+    </button>
+	<script src='main.js'></script>
+    <script src="http://debug-software.intel.com/target/target-script-min.js#kWrTYGiTtZb6wA09qEv4eUYJ-qH3jzWwWWhO1uROVNw"></script>
+</body>
+</html>
